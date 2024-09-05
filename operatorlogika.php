@@ -1,24 +1,16 @@
 <?php
-    $a = 60;
-    $b = 13;
+    $a = true;
+    $b = false;
 
-    $c = $a & $b;
-    echo "$a & $b = $c";
-    echo "<br>";
+    $c = $a && $b;
+    printf("%b && %b = %b", $a,$b,$c);
+    echo "<hr>";
 
-    $c = $a | $b;
-    echo "$a | $b = $c";
-    echo "<br>";
+    $c = $a || $b;
+    printf("%b || %b = %b", $a,$b,$c);
+    echo "<hr>";
 
-    $c = $a ^ $b;
-    echo "$a ^ $b = $c";
-    echo "<br>";
-
-    $c = $a << $b;
-    echo "$a << $b = $c";
-    echo "<br>";
-
-    $c = $a >> $b;
-    echo "$a >> $b = $c";
-    echo "<br>";
+    $c = !$a;
+    printf("!%b = %b", $a,$c);
+    echo "<hr>";
 ?>
